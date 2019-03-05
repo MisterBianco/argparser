@@ -88,7 +88,7 @@ proc parse*(parser : ArgParser) =
 
         else:
             if parser.Map.hasKey(arg):
-                parser.Values[parser.Map[arg]] = NodeValue(kind: nvBool, boolValue: false)
+                parser.Values[parser.Map[arg]] = NodeValue(kind: nvBool, boolValue: true)
 
 proc help(parser : ArgParser) = 
     echo parser.Help & "\n"
